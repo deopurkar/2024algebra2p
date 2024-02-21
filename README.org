@@ -1,0 +1,1 @@
+This repository contains course materials for *Algebra 2* at the *Australian National University* as taught in *2024*.
