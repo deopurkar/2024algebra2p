@@ -1,4 +1,4 @@
-% Created 2024-03-05 Tue 15:54
+% Created 2024-03-05 Tue 20:37
 % Intended LaTeX compiler: pdflatex
 \documentclass[12pt]{amsart}
 
@@ -28,28 +28,39 @@
 
 \maketitle
 \section{Degree of \(\mathbf{Q}(\cos (2\pi/p))\)?}
-\label{sec:org034cca3}
+\label{sec:org8ed314d}
+\noindent
 Let \(p\) be a prime number.
 What is the degree of \(\mathbf{Q}(\cos (2\pi/p))\) over \(\mathbf{Q}\)?
 
-\textbf{\textbf{Hints}}---
+\bigskip
+
+\noindent
+\textbf{\textbf{Hints}}
+
 Use that \(\mathbf{Q}(\cos(2\pi/p) + i \sin(2\pi/p))\) has degree \((p-1)\) over \(\mathbf{Q}\) and it contains \(\mathbf{Q}(\cos(2\pi/p))\).
 \section{Most angles cannot be trisected}
-\label{sec:org6594949}
+\label{sec:orgb33654b}
 See if you can prove the following theorem.
 
-\textbf{\textbf{Theorem}}---
+\bigskip
+
+\noindent
+\textbf{\textbf{Theorem}} ---
 Let \(t\) be such that \(\cos t\) is transcendental.
 Given \((0,0)\), \((0,1)\), and \((\cos t, \sin t)\), it is impossible to construct \((\cos t/3, \sin t/3)\) using ruler and compass.
 
-\textbf{\textbf{Sketch}}---
+\bigskip
 
-Follow the same method as in class, namely keep track of the field that contains the coordinates of the constructed points.
+\noindent
+\textbf{\textbf{Sketch of the proof}}
+
+Follow the same method as in class, keeping track of the field that contains the coordinates of the constructed points.
 The starting field will be \(\mathbf{Q}(\cos t, \sin t)\).
 The key is to prove that \(\cos (t/3)\) has degree 3 over this field.
 It is easier to handle the field \(\mathbf{Q}(\cos t)\), which is isomorphic to \(\mathbf{Q}(x)\), the field of rational functions in a variable \(x\).
 Over this field, prove that \(\cos(t/3)\) has degree 3.
 To do so, you need to prove that a certain polynomial in \(\mathbf{Q}(x)[y]\) is irreducible.
 Using the ideas in class, move through irreducibility in \(\mathbf{Q}(x)[y]\), in \(\mathbf{Q}[x,y]\), and \(\mathbf{Q}(y)[x]\).
-Then conclude that over \(\mathbf{Q}(\cos(t), \sin(t))\) also \(\cos(t/3)\) must have degree 3.
+Finall conclude that over \(\mathbf{Q}(\cos(t), \sin(t))\) also \(\cos(t/3)\) must have degree 3.
 \end{document}
