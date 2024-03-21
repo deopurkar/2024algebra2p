@@ -1,0 +1,73 @@
+% Created 2024-03-21 Thu 13:36
+% Intended LaTeX compiler: pdflatex
+\documentclass{amsart}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{longtable}
+\usepackage{wrapfig}
+\usepackage{rotating}
+\usepackage[normalem]{ulem}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{capt-of}
+\usepackage{hyperref}
+\date{}
+\title{Homework 3}
+\hypersetup{
+ pdfauthor={},
+ pdftitle={Homework 3},
+ pdfkeywords={},
+ pdfsubject={},
+ pdfcreator={Emacs 29.2 (Org mode 9.7-pre)}, 
+ pdflang={English}}
+\begin{document}
+
+\maketitle
+This homework is due by Friday, 5 April, 11:59pm on Gradescope.
+\footnote{The deadline is during teaching break, but I will have office hours as usual.}
+\section{Problem 1 (15.7.6)}
+\label{sec:orgc506cd0}
+Factor the polynomial \(x^{16}-x\) over a field of size \(4\) and a field of size \(8\).
+\section{Problem 2 (Presentations)}
+\label{sec:org40a0cd2}
+Let \(R \subset S\) be an inclusion of rings.
+Suppose we have an isomorphism
+\[ S \cong R[x_1, \dots, x_n]/I, \]
+where \(x_1, \dots, x_n\) are variables and \(I \subset R[x_1, \dots, x_n]\) is an ideal.
+Such an isomorphism is called a \emph{presentation} of \(S\) over \(R\).
+
+Let \(A\) be another ring and suppose a ring homomorphism \(i \colon R \to A\) is given.
+A presentation of \(S\) over \(R\) gives us all the ways of extending \(i\) to a ring homomorphism \(S \to A\).
+This is because a ring homomorphism \(R[x_1,\dots,x_n] \to A\) extending \(i\) is determined uniquely by the images of \(x_1, \dots, x_n\) and such a homomorphism is well-defined modulo \(I\) if and only if it sends \(I\) to \(0\).
+
+\begin{enumerate}
+\item Find a presentation for \(\mathbf{Q}[\sqrt[3]{2}]\) over \(\mathbf{Q}\).
+Use it to determine all homomorphisms
+\[ \mathbf{Q}[\sqrt[3] 2] \to \mathbf{C}.\]
+What are the images of these homomorphisms?
+
+\item Do the same for \(\mathbf{Q}[\sqrt 2, \sqrt 3]\) over \(\mathbf{Q}\).
+\end{enumerate}
+\section{Problem 3 (Automorphisms 1)}
+\label{sec:org310b6bf}
+Let \(p\) be a prime number and set \(\zeta_p = e^{2\pi i / p}\).
+Let \(F = \mathbf{Q}[\zeta_p]\).
+Find all automorphisms
+\[ \phi \colon F \to F.\]
+Describe the automorphism group \(\operatorname{Aut}(F)\).
+\section{Problem 4 (Automorphisms 2)}
+\label{sec:org445a019}
+
+Let \(F = \mathbf{Q}[\zeta_p]\), as before.
+Let \(K = F[2^{1/p}]\).
+Find all automorphisms \(\phi \colon K \to K\).
+How many are there?
+How many restrict to the identity on \(F\)?
+\section{Problem 5}
+\label{sec:orgce62a6f}
+Let \(K\) be a field of size \(p^n\).
+How many elements of \(K\) are perfect squares?
+Generalise your answer to perfect \(d\)-th powers.
+\end{document}
