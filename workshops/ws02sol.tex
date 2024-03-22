@@ -1,4 +1,4 @@
-% Created 2024-03-22 Fri 12:48
+% Created 2024-03-22 Fri 12:49
 % Intended LaTeX compiler: pdflatex
 \documentclass[12pt]{amsart}
 
@@ -27,13 +27,13 @@
 
 \maketitle
 \section{Factorisation in a finite field}
-\label{sec:org15d6025}
+\label{sec:orgfc8cc38}
 
 The polynomial \(f(x) = x^3+x+1 \in \mathbf{F}_5[x]\) is irreducible.
 Let \(K = \mathbf{F}[t]/(f(t))\).
 Find the irreducible factorisation of \(f(x)\) in \(K[x]\).
 \subsection{Solution sketch}
-\label{sec:orgdca28cc}
+\label{sec:org2916367}
 
 We know that \(t \in K\) is a root of \(f(x)\).
 We can find the other roots by applying the Frobenius, so \(t^3\), and \(t^9\).
@@ -41,7 +41,7 @@ So,
 \[ f(x) = (x-t)(x-t^3)(x-t^9).\]
 Can you bring the roots in the ``reduced form'' (at most quadratics in \(t\))?
 \section{Conjugates}
-\label{sec:orgc382d12}
+\label{sec:org60b222e}
 
 Let \(F \subset K\) be a field extension.
 We say that \(\alpha, \beta \in K\) are \emph{conjugates} over \(F\) if they have the same minimal polynomial over \(F\).
@@ -56,7 +56,7 @@ Prove that the conjugates of \(a \in L\) over \(K\) are \(a, \phi^n(a), \phi^{2n
 \item What is the analogue of (2) in this situation?
 \end{enumerate}
 \subsection{Solution sketch}
-\label{sec:orgde88230}
+\label{sec:org92ee38f}
 
 \begin{enumerate}
 \item Suppose \(f(x) = \sum a_i x^i\) is the minimal polynomial of \(a\), where \(a_i \in \mathbf{F}_p\).
@@ -80,7 +80,7 @@ So the \(\phi^{i}(a)\) are indeed all the conjugates of \(a\).
 \item The degree of \(a \in L\) over \(K\) is the smallest \(m\) such that \(\phi^{nm}(a) = a\).
 \end{enumerate}
 \section{Factorisation, once again}
-\label{sec:org3fbba91}
+\label{sec:org5395a0c}
 
 Let \(f(x) \in \mathbf{F}_p[x]\) be irreducible of degree \(18\).
 Let \(\mathbf{F}_p \subset K\) be an extension of degree \(4\).
@@ -89,7 +89,7 @@ How does \(f(x)\) factorise in \(K[x]\)?
 \noindent
 \textbf{Hint}.  Let \(K \subset L\) be an extension of degree 9, so that \(\mathbf{F}_p \subset L\) is of degree 36.  First factorise \(f(x)\) in \(L\) and then ``collect the conjugates'' over \(K\).
 \subsection{Solution sketch}
-\label{sec:org0327c8b}
+\label{sec:orgc08e820}
 
 Let \(a \in L\) be a root of \(f(x)\).
 Then \(18\) is the smallest such that \(\phi^{18}(a) = a\) and the factorisation of \(f(x)\) is
