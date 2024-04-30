@@ -1,0 +1,61 @@
+% Created 2024-04-30 Tue 15:36
+% Intended LaTeX compiler: pdflatex
+\documentclass[12pt]{amsart}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{longtable}
+\usepackage{wrapfig}
+\usepackage{rotating}
+\usepackage[normalem]{ulem}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{capt-of}
+\usepackage{hyperref}
+\author{2024 Algebra 2}
+\date{}
+\title{Workshop 4}
+\hypersetup{
+ pdfauthor={2024 Algebra 2},
+ pdftitle={Workshop 4},
+ pdfkeywords={},
+ pdfsubject={},
+ pdfcreator={Emacs 29.2 (Org mode 9.7-pre)}, 
+ pdflang={English}}
+\begin{document}
+
+\maketitle
+In this workshop, we explore the theme of roots, coefficients, and symmetry.
+
+\begin{enumerate}
+\item Let
+\[ p(x) = x^3 + 2x^2 + 3x + 4,\]
+and let \(\alpha, \beta, \gamma \in \mathbf{C}\) be the roots of \(p(x)\).
+The expression
+\[ \alpha^2 + \beta^2 + \gamma^{2}\]
+is symmetric, and hence must be rational.
+Find out the exact value.
+
+\item If an expression is not completely symmetric, the more symmetric it is, the ``closer'' it is to the base field.
+For example, let \(\alpha, \beta, \gamma\) be the roots (in some big extension) of a cubic \(p(x) \in F[x]\).
+Prove that \(\alpha^2 \beta + \beta^2 \gamma + \gamma^2\alpha\) has degree at most 2 over \(F\).\\
+\emph{Hint}: Following the idea in the proof of the theorem about splitting fields, try to construct a symmetric polynomial of degree 2 with this as a root.
+
+\item As another application of the principle above, let \(\alpha, \beta, \gamma, \delta\) be the roots (in some extension) of a quartic over \(F\).
+Prove that
+\[ \alpha\beta + \gamma\delta\]
+has degree at most 3 over \(F\).
+
+\item As another application of the principle, let \(\alpha_1, \dots, \alpha_n\) be the roots of \(p(x) \in F[x]\) of degree \(n\).
+Consider
+\[ d = \prod_{i < j}(\alpha_i - \alpha_j).\]
+Prove that \(d\) satisfies a quadratic equation over \(F\).
+
+\item Sometimes, the element is closer to the base-field than we expect from symmetry.
+For example, consider the cubic
+\[ p(x) = x^3-3x-1.\]
+Prove that for this cubic, the element \(d\) above is actually a rational number.
+You may find it helpful to consult Wikipedia for the formula for the discriminant of a cubic.
+\end{enumerate}
+\end{document}
