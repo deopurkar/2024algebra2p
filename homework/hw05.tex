@@ -1,0 +1,81 @@
+% Created 2024-05-03 Fri 13:21
+% Intended LaTeX compiler: pdflatex
+\documentclass{amsart}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{longtable}
+\usepackage{wrapfig}
+\usepackage{rotating}
+\usepackage[normalem]{ulem}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{capt-of}
+\usepackage{hyperref}
+\usepackage{fullpage}
+\date{}
+\title{Homework 5}
+\hypersetup{
+ pdfauthor={},
+ pdftitle={Homework 5},
+ pdfkeywords={},
+ pdfsubject={},
+ pdfcreator={Emacs 29.2 (Org mode 9.7-pre)}, 
+ pdflang={English}}
+\begin{document}
+
+\maketitle
+\emph{This homework is due by Friday, May 24, 11:59pm on Gradescope.  This is the last homework set, so I have given 3 weeks.}
+\bigskip
+
+The first three problems are about \emph{nested square roots}, namely complex numbers like \(\sqrt{\sqrt 2 + \sqrt{1 + \sqrt 3}}\).
+More precisely, \(\alpha \in \mathbf{C}\) is a \emph{nested square root} if there exists a sequence of fields
+\[ \mathbf{Q} = F_0 \subset F_1 \subset \cdots \subset F_n\]
+such that each \(F_{i+1}/F_{i}\) is a quadratic extension and \(\alpha \in F_{n}\).
+A nested square root is also called a \emph{constructible number} because these are precisely the complex numbers that can be constructed with a ruler and compass, starting with the two points \(0\) and \(1\).
+\section{Problem 1  (16.9.3 modified)}
+\label{sec:org6722f98}
+
+Some nested square roots can be de-coupled to a linear combination of simple square roots.
+For example, we have
+\[ \sqrt {5 + 2\sqrt 6} = \sqrt 2 + \sqrt 3.\]
+But some cannot be.
+Prove that \(\alpha = \sqrt{1 + \sqrt 3}\) cannot be written as a sum
+\[ \sqrt{a_{1}} + \cdots + \sqrt{a_{n}}, \quad a_i \in \mathbf{Q}.\]
+
+\textbf{Hint}. Compare the Galois group of the minimal polynomial of \(\alpha\) over \(\mathbf{Q}\) and the Galois group of \(\mathbf{Q}[\sqrt{a_1}, \dots, \sqrt{a_n}] / \mathbf{Q}.\)
+\section{Problem 2}
+\label{sec:org385d7f9}
+
+Let \(\alpha \in \mathbf{C}\) be a nested square root.
+Let \(G\) be the Galois group of the minimal polynomial of \(\alpha\) over \(\mathbf{Q}\).
+Prove that the order of \(G\) is a power of \(2\).
+
+\textbf{Caution}. Make sure that the extension you are considering is Galois!
+\section{Problem 3}
+\label{sec:orgf6d994a}
+
+Prove the converse to the problem before: if \(\alpha \in \mathbf{C}\) is such that its minimal polynomial over \(\mathbf{Q}\) has Galois group whose order is a power of 2, then \(\alpha\) is a nested square root.
+As an application, show that if \(p\) is a prime number of the form \(2^n+1\), then \(\zeta_p\) is a nested square root.
+
+With this, we have completed a proof of the following.\\
+\textbf{Theorem}. For a prime number \(p\), the regular \(p\)-gon is constructible if and only if \(p\) has the form \(2^n+1\).
+
+In this problem, you may use the following fact from group theory without proof. \\
+\textbf{Theorem}. Let \(p\) be a prime and \(G\) a group of order \(p^{n}\) for \(n \geq 1\).  Then \(G\) contains a normal subgroup of index \(p\).
+\section{Problem 4}
+\label{sec:org9cdbcca}
+
+Determine the Galois group of the polynomial \(x^6+3\) over the base fields
+\begin{enumerate}
+\item \(F = \mathbf{Q}\)
+\item \(F = \mathbf{Q}[\zeta_3]\).
+\end{enumerate}
+\section{Problem 5 (16.12.7)}
+\label{sec:org4b001ce}
+
+Find a polynomial of degree \(7\) over \(\mathbf{Q}\) whose Galois group is \(S_7\).
+
+\textbf{Hint}. Take inspiration from the construction in \emph{Artin} for degree 5.
+\end{document}
