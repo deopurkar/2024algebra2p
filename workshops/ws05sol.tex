@@ -46,7 +46,7 @@ Subgroup & Order\\
 \end{tabular}
 \end{center}
 \section{Problem 1}
-\label{sec:org1355876}
+\label{sec:orga0bc632}
 
 Say \(f(x)\) is a quartic with roots \(\alpha_1, \dots, \alpha_4\).
 The resolvent cubic \(g(x)\) is the cubic with roots 
@@ -56,12 +56,21 @@ The resolvent cubic \(g(x)\) is the cubic with roots
 \beta_3 &= \alpha_1\alpha_4 + \alpha_2\alpha_3.
 \end{align*}
 Check that \(f(x)\) and \(g(x)\) have the same discriminant.
+\subsection{Solution sketch}
+\label{sec:org9a2846f}
+We have \[\beta_2 - \beta_1 = (\alpha_1-\alpha_4)(\alpha_2-\alpha_3)\], and likewise for the other three differences.
+So product of the 3 differences of the \(\beta\)'s equals the product of the 6 differences of the \(\alpha\)'s.
 \section{Problem 2}
-\label{sec:orgc730736}
+\label{sec:org4308624}
 
 Prove that the discriminant is a square in \(F\) if and only if \(G \subset A_4\).
+\subsection{Solution sketch}
+\label{sec:org8b3d37c}
+We have already seen this in class.
+An odd permutation changes the sign of the square root of the discriminant.
+So the square root of the discriminant is in \(F\) if and only if there are no odd permutations in \(G\).
 \section{Problem 3}
-\label{sec:org82e02a9}
+\label{sec:org4fc6139}
 
 Justify the following table (as much as you can) about the Galois group.
 Use the following observations.
@@ -83,4 +92,28 @@ Resolvent factors as 1+1+1 & \(V\) & Impossible\\
 \hline
 \end{tabular}
 \end{center}
+\subsection{Solution sketch}
+\label{sec:orgf6a19b3}
+
+Suppose the resolvent is irreducible and the discriminant is not a square.
+Then \(\operatorname{Aut}(L/F) \cong S_3\).
+Therefore, we have a surjection \(G \to S_3\).
+The only possible \(G\) that could surject onto \(S_3\) are \(S_4\) or \(A_4\) (the order of \(G\) must be divisible by 6).
+But since the discriminant is not a square, \(G\) is not \(A_4\), so it must be \(S_4\).
+
+Suppose the resolvent is irreducible and the discriminant is a square.
+Then we have a surjection \(G \to A_3\).
+So the order of \(G\) is divisible by 3, which leaves the possibilities \(G = S_4\) or \(A_4\).
+The discriminant being a square shows that \(G = A_4\).
+
+If the resolvent factors as \(1+2\), then one of the \(\beta\)'s is fixed by \(G\), say \(\beta_1\).
+The only permutations that fix \(\beta_1\) are those in \(D_4 \subset S_4\), where we think of \(D_4\) as symmetries of the square with 1, 3 and 2, 4 as opposite vertices.
+(Check that the discriminant of a cubic with irreducible factorisation \(1+2\) cannot be a square.)
+So \(G \subset D_4\). 
+This leaves 3 possibilities \(G = V, C_4, D_4\).
+The first one would also fix \(\beta_2\) and \(\beta_3\), which we know is not the case.
+So we can strike that off.
+
+Finally, if the resolvent factors as \(1+1+1\), then \(G\) fixes all \(\beta\)'s.
+The only such \(G\) is \(G = V\).
 \end{document}
